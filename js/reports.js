@@ -94,6 +94,7 @@ function pintarRespuestaDate(respuestaDate) {
 
     let myTableDate = "<table>";
     myTableDate += "<tr>";
+    myTableDate += "<th bgcolor = lightblue > Total </th>";
     myTableDate += "<th bgcolor = lightblue > Fecha de Devolución </th>";
     myTableDate += "<th bgcolor = lightblue > Fecha de Inicio </th>";
     myTableDate += "<th bgcolor = lightblue > Estado Date </th>";

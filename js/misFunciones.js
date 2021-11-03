@@ -203,7 +203,6 @@ function editarCategory(id) {
 
 ///CABAÑA/////////////////////////////////////////////////////////////////////////////////////
 function autoInicioCategory() {
-    console.log("se esta ejecutando")
     $.ajax({
         url: "http://129.151.125.160:8080/api/Category/all",
         type: "GET",
@@ -490,7 +489,6 @@ function pintarRespuestaClient(respuestaClient) {
     myTableClient += "<tr border: 1>";
     myTableClient += "<th bgcolor = steelblue> Id Cliente </th>";
     myTableClient += "<th bgcolor = steelblue>  Correo </th>";
-    myTableClient += "<th bgcolor = steelblue> Contraseña </th>";
     myTableClient += "<th bgcolor = steelblue> Nombre </th>";
     myTableClient += "<th bgcolor = steelblue> Edad </th>";
     myTableClient += "<th bgcolor = steelblue> Mensaje </th>";
@@ -499,7 +497,6 @@ function pintarRespuestaClient(respuestaClient) {
         myTableClient += "<tr>";
         myTableClient += "<td>" + respuestaClient[i].idClient + "</td>";
         myTableClient += "<td>" + respuestaClient[i].email + "</td>";
-        myTableClient += "<td>" + respuestaClient[i].password + "</td>";
         myTableClient += "<td>" + respuestaClient[i].name + "</td>";
         myTableClient += "<td>" + respuestaClient[i].age + "</td>";
         myTableClient += "<td>" + respuestaClient[i].messages.messageText + "</td>";
@@ -1151,6 +1148,7 @@ function autoInicioRelacionReservation() {
 }
 
 /// GET
+
 function TraerScore() {
     $.ajax({
 
