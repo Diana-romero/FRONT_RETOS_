@@ -1303,7 +1303,7 @@ function actualizarScore (idScore) {
 
 /// DELETE
 
-function eliminarReservation(idScore) {
+function eliminarScore(idScore) {
     let myDataScore = {
         id: idScore
     };
