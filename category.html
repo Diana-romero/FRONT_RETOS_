@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    </style>
+    <meta name="author" content="DIANA PAOLA ROMERO CARDENAS">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Reto3</title>
+</head>
+
+<body bgcolor="pink">
+    <h4><img src="https://profesorapaulina.cl/images/botonregreso.gif" width="80"> &nbsp; <a
+            href="index.html">REGRESAR</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+            src="https://c.tenor.com/p59NJj58LMsAAAAM/waving-wave.gif" width="80"></h4>
+    <!--CATEGORIA-->
+
+    <header id="cabeceraCategory">
+        <h1> Categorias!!!</h1>
+    </header>
+    <fieldset style="width: 60%">
+        <legend><b>Registrar los datos de las categorias</b><br></legend>
+
+        <!--Se crea el botón para traer información de la tabla categoria-->
+        <button style="background-color: rgb(211, 153, 143)" onclick="TraerCategoria()"> <b>Consultar
+                Categoria</b><br></button>
+        <tr>
+            <br>
+            <br>
+            <th><b>Name</b></th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><input type="text" maxlength="50" id="name1" placeholder="Digite el nombre - Categoria"> </td>
+        </tr>
+        <br>
+        <th>
+            <div><b>Description</b></div>
+        </th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <td><textarea type="text" maxlength="250" id="description1" placeholder="Digite la descripción de la Categoria" rows="2" cols="30"></textarea></td>
+        </tr>
+        <br>
+
+        </table>
+        <br>
+        <button style="background-color: rgb(139, 100, 128)" onclick="guardarCategoria()"><b>Agregar
+                Categoria!</b><br></button>
+        <!--<button style="background-color: rgb(163, 110, 123)" onclick="mostrarUnaCategoriaEspecifica()"><b>Mostrar una
+                Categoria!</b><br></button>-->
+        <br>
+        <br>
+    </fieldset>
+
+    <div id="resultadoCategory"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <marquee behavior="alternate" direction="left"><img
+            src="https://i.pinimg.com/originals/24/56/cd/2456cd816d1c2be4d0255302b5bd69b1.jpg"
+            width="220">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img
+            src="https://acegif.com/wp-content/uploads/happy-person-13.gif" width="215">
+    </marquee>
+
+
+</body>
+
+
+</html>

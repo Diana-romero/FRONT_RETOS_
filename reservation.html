@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+
+    <meta name="author" content="DIANA PAOLA ROMERO CARDENAS">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Reto3 y Reto4</title>
+</head>
+
+<body bgcolor="khaki">
+    <h4><img src="https://profesorapaulina.cl/images/botonregreso.gif" width="80"> &nbsp; <a
+            href="index.html">REGRESAR</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+            src="https://chaletsuizo.co/images/reservas.gif" width="180"></h4>
+
+    <!--RESERVATION-->
+
+    <header id="cabeceraReservation">
+        <h1> Reservaciones!!!</h1>
+    </header>
+    <fieldset style="width: 90%">
+        <legend><b>Registrar la información de las reservas </b><br></legend>
+        <br>
+        <button style="background-color: rgba(211, 184, 35, 0.966)" onclick="TraerReservation()"> <b>Consultar
+                Reserva</b><br></button>
+        <tr>
+            <br>
+            <br>
+            <th><b>StartDate  </b></th> - Digite la Fecha de Inicio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><input type="date" id="startDate" placeholder="Fecha de inicio"> </td>
+        </tr>
+        <br>
+        <tr>
+            <th><b>DevolutionDate </b></th> -  Digite la Fecha de Devolución &nbsp;
+            <td><input type="date" id="devolutionDate" placeholder="Fecha de devolución"></td>
+        </tr>
+        <br>
+        <tr>
+            <th><b>Status  </b></th> - Digite el estado de la Reserva
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><input type="text" id="status" placeholder="Estado de la Reserva"></td>
+        </tr>
+        <br>
+        <tr>
+            <th><b>Client</b></th>  - Elija el nombre del cliente
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select placeholder="Seleccionar el cliente" id="select-client">
+                <option>Seleccionar Cliente </option>
+            </select>
+        </tr>
+        <script type="text/javascript">
+            window.onload = autoInicioClient();
+        </script>
+
+        <br>
+        <tr>
+            <th><b>Cabin</b></th> - Elija el nombre de la cabaña
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select placeholder="Seleccionar la cabaña" id="select-cabin">
+                <option>Seleccionar Cabaña </option>
+            </select>
+        </tr>
+        <script type="text/javascript">
+            window.onload = autoInicioCabin();
+        </script>
+        <br>
+        <br>
+
+        <button style="background-color: rgba(160, 172, 59, 0.966)" onclick="guardarReservation()"><b>Agregar
+                Reservation!</b><br></button>
+        <br>
+        <br>
+    </fieldset>
+    <div id="resultadoReservation"></div>
+    <br>
+    <br>
+    <marquee behavior="scroll" direction="left"><img
+            src="https://hostaldelpozoqueretaro.files.wordpress.com/2013/09/reservaciones.gif"
+            width="550">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img
+            src="https://calypsoapartamentos.com/wp-content/uploads/2019/03/reservar.gif" width="250">
+    </marquee>
+
+
+</body>
+
+
+</html>

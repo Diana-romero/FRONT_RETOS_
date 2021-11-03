@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+
+    <meta name="author" content="DIANA PAOLA ROMERO CARDENAS">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Reto3</title>
+</head>
+
+<body bgcolor="lightcyan">
+    <h4><img src="https://profesorapaulina.cl/images/botonregreso.gif" width="80"> &nbsp; <a
+        href="index.html">REGRESAR</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+        src="https://c.tenor.com/p59NJj58LMsAAAAM/waving-wave.gif" width="100"></h4>
+
+    <!--CALIFICACIÓN-->
+
+    <header id="cabeceraScore">
+        <h1> Calificaciones!!!</h1>
+    </header>
+    <fieldset style="width: 60%">
+        <legend><b>Registrar la calificación de Reservas </b><br></legend>
+        <br>
+        <button style="background-color: rgba(99, 205, 212, 0.966)" onclick="TraerScore()"> <b>Consultar calificaciones!!</b><br></button>
+        <tr>
+            <br>
+            <br>
+            <th><b>Score</b></th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><input type="number" min="0" max="5" value="5" id="id-input-numero"></td>
+        </tr>
+        <br>
+        <tr>
+            <th><b>Message</b></th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><input type="text" maxlength="250" id="message2" placeholder="Digite el mensaje"></td>
+        </tr>
+        <br>
+
+        <tr>
+            <th><b> Reservacion</b></th>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select placeholder="Seleccionar la Reservacion" id="select-Reservation">
+                <option>Seleccionar la Reservacion </option>
+            </select>
+        </tr>
+        <script type="text/javascript">
+            window.onload = autoInicioRelacionReservation();
+        </script>
+
+
+        <br>
+        <button style="background-color: rgba(111, 157, 209, 0.966)" onclick="guardarScore()"><b>Agregar calificación!!</b><br></button>
+
+    </fieldset>
+    <div id="resultadoScore" > </div>
+
+
+</body>
+
+
+</html>

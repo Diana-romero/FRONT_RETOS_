@@ -1,0 +1,24 @@
+/* Se agrega color al body de reportes*/
+body{
+    background-color: rgb(211, 216, 191);
+}
+
+h1{
+    text-align: center;
+}
+
+#cabeceraReportes {
+    width: 90%;
+    height: 50px;
+    padding: 0.0% 5%;
+    background-color: rgb(163, 192, 130);
+    }
+    #cabeceraReportes > div {
+    width: 960px;
+    margin: 1px auto;
+    padding-top: 45px;
+    }
+    #cabeceraReportes h1 {
+    font: bold 35px Arial,  monospace;
+    color: #080808;
+    }

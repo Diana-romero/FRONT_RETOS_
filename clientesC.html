@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+
+    <meta name="author" content="DIANA PAOLA ROMERO CARDENAS">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Reto3</title>
+</head>
+
+<body bgcolor="lightskyblue">
+    <h4><img src="https://profesorapaulina.cl/images/botonregreso.gif" width="80"> &nbsp; <a
+            href="index.html">REGRESAR</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+            src="https://c.tenor.com/cgvdEeeR4jgAAAAM/emoji-high-five.gif" width="50"></h4>
+
+    <!--CLIENTES-->
+
+    <header id="cabeceraClients">
+        <h1> Clientes!!!</h1>
+    </header>
+    <br>
+    <fieldset style="width: 60%">
+        <legend><b>Registrar los datos de los clientes</b><br></legend>
+
+        <!--Se crea el botón para traer información de la tabla cliente-->
+        <button style="background-color: rgb(51, 88, 129)" onclick="TraerCliente()"> <b>Consultar clientes</b><br></button>
+        <br>
+        <br>
+        <tr>
+            <th><b>Name</b></th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><input type="text" maxlength="250" id="name2" placeholder="Digitar nombre del Cliente"></td>
+        </tr>
+        <br>
+        <tr>
+            <th><b>Email</b></th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><input type="text" maxlength="45" id="email1" placeholder="Digitar correo del Cliente"> </td>
+        </tr>
+        <br>
+        <tr>
+            <th><b>Password</b></th>&nbsp;&nbsp;
+            <td><input type="password" maxlength="45" id="password1" placeholder="Digitar contraseña del Cliente"> </td>
+        </tr>
+        <br>
+        </tr>
+        <th><b>Age</b></th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <td><input type="number" id="age" placeholder="Digitar edad del Cliente"> </td>
+        </tr>
+        <br>
+        <br>
+        <button style="background-color: rgba(54, 135, 182, 0.966)" onclick="guardarCliente()"><b>Guardar un
+                cliente!</b><br></button>
+        <!--<button style="background-color: rgb(73, 122, 187)" onclick="mostrarUnClienteEspecifico()"><b>Mostrar un
+                cliente!</b><br></button>-->
+
+    </fieldset>
+    <div id="resultadoClient"></div>
+    <br>
+
+    <br>
+    <marquee behavior="alternate" direction="left"><img
+            src="https://c.tenor.com/dTKIc65ms-AAAAAM/clienteagente-anaejoao.gif"
+            width="350">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img
+            src="https://c.tenor.com/e0k656va0QQAAAAM/bueno-cliente-feliz.gif" width="215">
+    </marquee>
+
+</body>
+
+
+</html>

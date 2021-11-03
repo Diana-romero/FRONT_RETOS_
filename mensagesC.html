@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+
+    <meta name="author" content="DIANA PAOLA ROMERO CARDENAS">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Reto3</title>
+</head>
+
+<body bgcolor="paleturquoise">
+    <h4><img src="https://profesorapaulina.cl/images/botonregreso.gif" width="80"> &nbsp; <a
+            href="index.html">REGRESAR</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+            src="https://c.tenor.com/p59NJj58LMsAAAAM/waving-wave.gif" width="80"></h4>
+
+    <!--Mensajes-->
+
+    <header id="cabeceraMessages">
+        <h1> Mensajes!!!</h1>
+    </header>
+    <br>
+    <fieldset style="width: 80%">
+        <legend><b>Registrar los datos del mensaje</b><br></legend>
+        <br>
+        <button style="background-color: rgba(138, 175, 150, 0.966)" onclick="TraerMensaje()"> <b>Consultar
+                Mensajes!!</b><br></button>
+        <br>
+        <br>
+        <th>
+            <div><b>Messagetext</b></div>
+        </th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><textarea type="text" maxlength="250" id="messagetext" placeholder="Escribir el mensaje" rows="2" cols="30"></textarea> </td>
+        </tr>
+        <br>
+        <tr>
+            <th><b>Client</b></th>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select placeholder="Seleccionar el cliente" id="select-client">
+                <option>Seleccionar Cliente </option>
+            </select>
+        </tr>
+        <script type="text/javascript">
+            window.onload = autoInicioRelacionClient();
+        </script>
+        <br>
+        <tr>
+            <th><b>Cabin</b></th>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select placeholder="Seleccionar la cabana" id="select-cabin">
+                <option>Seleccionar Cabaña </option>
+            </select>
+        </tr>
+        <script type="text/javascript">
+            window.onload = autoInicioRelacionCabana();
+        </script>
+
+        <br>
+        <br>
+        <button style="background-color: rgba(48, 133, 100, 0.966)" onclick="guardarMensaje()"><b>Agregar
+                Mensaje!</b><br></button>
+
+    </fieldset>
+    <div id="resultadoMensaje"></div>
+    <br>
+    <br>
+    <marquee behavior="alternate" direction="left"><img src="https://monophy.com/media/UWEGU7KQ8Gkm8yV1uN/monophy.gif"
+            width="250">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img
+            src="https://i.gifer.com/7N3z.gif" width="250">
+    </marquee>
+
+</body>
+
+
+</html>

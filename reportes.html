@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    </style>
+    <meta name="author" content="DIANA PAOLA ROMERO CARDENAS">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/reports.js"></script>
+    <link rel="stylesheet" href="estiloss.css">
+    <title>Reto5</title>
+</head>
+
+<body>
+    <h4><img src="https://profesorapaulina.cl/images/botonregreso.gif" width="80"> &nbsp; <a
+            href="index.html">REGRESAR</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+            src="https://c.tenor.com/p59NJj58LMsAAAAM/waving-wave.gif" width="100"></h4>
+
+    <body>
+        <header id="cabeceraReportes">
+            <h1> REPORTES!!!</h1>
+        </header>
+        <br>
+        <fieldset style="width: 80%">
+            <legend><b>Registrar los datos para generar los reportes</b><br></legend>
+            <br>
+            <form class="submit">
+                <button style="background-color: rgba(189, 176, 102, 0.966)" onclick="TraerReportsStatus()"> Generar los
+                    Reportes del Status de Reservas </button>
+                <br>
+                <br>
+                <div id="resultadoStatus"></div>
+                <br>
+                <br>
+                <tr>
+                    <th><b> FECHA DE INICIO </b>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+                    <th><b> FECHA DE DEVOLUCIÓN </b></th>
+                    <br>
+                    <td><input type="date" id="DstarDate" placeholder="descripcion" value=""></td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><input type="date" id="DdevolutionDate" placeholder="descripcion" value=""></td>
+                </tr>
+                <br>
+                <br>
+                <button style="background-color: rgba(92, 86, 56, 0.966)" onclick="TraerReporteDate()">
+                    <th>Generar Reporte en un tiempo determinado</th>
+                </button>
+                <br>
+                <br>
+                <div id="resultadoDate"></div>
+                <br>
+
+                <button style="background-color: rgba(121, 108, 38, 0.966)" onclick="TraerReporteClientes()"> Generar
+                    Reporte Clientes y Cantidad de reservas por cliente
+                </button>
+                <br>
+        </fieldset>
+        <div id="resultadoReportes"></div>
+        </form>
+        <br>
+        <br>
+        <marquee behavior="alternate" direction="left"><img
+                src="https://i.pinimg.com/originals/58/7b/56/587b56152612d9845ff1251baf9ab17e.gif"
+                width="250">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="https://i.pinimg.com/originals/3c/e6/96/3ce696a3abf15094b07684596d97a17c.gif" width="180">
+        </marquee>
+
+    </body>
+
+</html>

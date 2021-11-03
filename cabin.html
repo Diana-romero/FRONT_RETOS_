@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    </style>
+    <meta name="author" content="DIANA PAOLA ROMERO CARDENAS">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Reto 3, Reto 4 y Reto 5</title>
+</head>
+
+<body bgcolor="palegreen">
+    <h4><img src="https://profesorapaulina.cl/images/botonregreso.gif" width="80"> &nbsp; <a
+            href="index.html">REGRESAR</a></h4>
+    <!--CABAÑA-->
+
+    <header id="cabeceraCabana">
+        <h1> Cabañas!!!</h1>
+    </header>
+    <fieldset style="width: 80%">
+        <legend><b>Registrar los datos de las cabañas</b><br></legend>
+
+        <!--Se crea el botón para traer información de la tabla cabana-->
+        <button style="background-color: rgb(34, 177, 131)" onclick="TraerCabana()"> <b>Consultar
+                cabanas</b><br></button>
+        <br>
+        <br>
+        <tr>
+            <th><b>Brand</b></th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><input type="text" maxlength="45" id="brand" placeholder="Digitar la marca - cabaña"></td>
+        </tr>
+        <br>
+        <tr>
+            <th><b>Rooms</b></th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><input type="number" id="rooms" placeholder="Digitar número de cuartos - cabaña"> </td>
+        </tr>
+        <br>
+        <tr>
+            <th><b>Category</b></th>&nbsp;&nbsp;&nbsp;
+            <td><select placeholder="Seleccionar la Categoria" id="select-category"> </td>
+            <option>Seleccionar Categoria </option>
+            </select>
+
+        </tr>
+        <br>
+        <tr>
+            <th><b>Name</b></th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><input type="text" maxlength="45" id="name" placeholder="Digitar nombre - cabaña"> </td>
+        </tr>
+        <br>
+        <th>
+            <div><b>Description</b></div>
+        </th>&nbsp;&nbsp;
+        <td><textarea id="description" maxlength="250" placeholder="Digite la descripción de la cabaña" rows="2" cols="30"></textarea> </td>
+    
+
+        <script type="text/javascript">
+            window.onload = autoInicioCategory();
+        </script>
+        <br>
+
+        <br>
+        <button style="background-color: rgb(57, 110, 93)" onclick="guardarCabana()"><b>Agregar cabana!</b><br></button>
+        <!--<button style="background-color:rgb(60, 168, 75)" onclick="mostrarUnaCabanaEspecifica()"><b>Mostrar una
+                cabana!</b><br></button>-->
+        <br>
+    </fieldset>
+
+
+    <div id="resultadoCabana"></div>
+    <h1>
+        <marquee behavior="alternate" direction="left"><img src="https://reygif.com/media/5/cabana-lago-66256.gif"
+                width="220">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img
+                src="https://c.tenor.com/Uvd9ouR_YYAAAAAC/family-kiss.gif" width="200">
+        </marquee>
+    </h1>
+
+</body>
+
+</html>
